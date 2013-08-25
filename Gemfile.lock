@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    highline (1.6.19)
+    net-ssh (2.6.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  highline
+  net-ssh
