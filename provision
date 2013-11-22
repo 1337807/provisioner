@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 if ARGV.length < 1
   puts "Usage: ruby provision 127.0.0.1"
@@ -8,13 +8,14 @@ end
 class Provisioner
   attr_reader :host
 
-  def initialize
-    @host = ARGV[0]
+  def initialize(host)
+    @host = host
   end
 
   def run
-    `scp install.sh root@#{host}:/root/install.sh`
+    `scp install.sh root@#{host}:/root/setup.sh`
+    `scp sshd_config root@#{host}:/root/sshd_config`
   end
 end
 
-Provisioner.new.run
+Provisioner.new(ARGV[0]).run

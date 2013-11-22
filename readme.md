@@ -7,5 +7,5 @@ dMP     dMP dMP  VMMMP"    VP"  dMP  VMMMP" dMP  VMMMP" dMP dMP dMMMMMP dMP dMP
 ```
 Completely unrelated to professional vision.
 
-This is a bash script to setup a new VPS. It's unlikely you'll find anything
+This is a chef script to setup a new VPS. It's unlikely you'll find anything
 here useful but if you do you're welcome to it.
