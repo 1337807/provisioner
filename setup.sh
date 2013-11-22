@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 apt-get -y update
-apt-get -y install build-essential libyaml-dev zlib1g-dev openssl libssl-dev lib64readline-gplv2-dev
+apt-get install -y make gcc
+apt-get install -y curl git-core python-software-properties
+apt-get install -y build-essential zlib1g-dev libyaml-dev libssl-dev
+apt-get install -y libgdbm-dev libreadline6-dev libncurses5-dev
+apt-get install -y libpq-dev libffi-dev
 cd /tmp
 wget ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 tar -xvzf ruby-2.0.0-p247.tar.gz

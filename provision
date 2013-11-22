@@ -13,8 +13,9 @@ class Provisioner
   end
 
   def run
-    `scp install.sh root@#{host}:/root/setup.sh`
+    `scp setup.sh root@#{host}:/root/setup.sh`
     `scp sshd_config root@#{host}:/root/sshd_config`
+    `scp -r chef root@#{host}:/var/chef`
   end
 end
 

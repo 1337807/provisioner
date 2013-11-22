@@ -1,0 +1,7 @@
+{
+  "user": { 
+    "name": "jonan",
+    "password": "$1$8x1Bxh8I$BODN7IeLk.FUT81Cb42jd1"
+  },
+  "run_list":["recipe[main]"]
+}
